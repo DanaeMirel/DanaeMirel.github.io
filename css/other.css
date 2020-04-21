@@ -1,5 +1,5 @@
 :root {
-    font-size: 16px;
+  font-size: 16px;
 }
 *,
 *:after,
@@ -58,7 +58,7 @@ a {
   position: relative;
   font: 600% Helvetica, Sans-Serif;
   letter-spacing: -5px;
-  color:white;
+  color: white;
 }
 
 .intro-text-job {
@@ -300,38 +300,34 @@ a {
 /* Start: Learn more Bottom-----------------------------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Mukta:700");
 
-
-.about-section{
+.about-section {
   display: flex;
-  flex-direction:row;
-  justify-content:space-between;
+  flex-direction: row;
+  justify-content: space-between;
   font-size: 16px;
   font-size: 1em;
-/*   flex-wrap:wrap;   */
+  /*   flex-wrap:wrap;   */
 }
-@media(min-width:1450px){
-  .about-section{
+@media (min-width: 1450px) {
+  .about-section {
     white-space: pre-line;
   }
 }
 
-
-.about-photo{
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    border: 15px solid transparent; 
-
+.about-photo {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border: 15px solid transparent;
 }
 
-@media(min-height: 1024px){
-    .about-photo {
+@media (min-height: 1024px) {
+  .about-photo {
     width: 100%;
     height: auto;
     max-width: 400px;
   }
 }
-
 
 @media (min-width: 1361px) {
   .about-photo {
@@ -340,13 +336,6 @@ a {
     max-width: 550px;
   }
 }
-
-
-
-
-
-
-
 
 .cv-button {
   display: flex;
@@ -366,8 +355,8 @@ button {
   text-decoration: none;
   background: transparent;
   padding: 0;
+  font-family:inherit;
   font-size: inherit;
-  font-family: inherit;
 }
 button.learn-more {
   width: 12rem;
@@ -450,7 +439,7 @@ button:hover .button-text {
 }
 
 .list-elements {
-  font-size:1.5em;
+  font-size: 1.5em;
   padding: 5px 0;
 }
 
@@ -471,7 +460,7 @@ button:hover .button-text {
 }
 
 .lavel {
-  background-color: #CBC7B1;
+  background-color: #cbc7b1;
   font-family: "Montserrat";
   text-transform: uppercase;
   text-align: center;
@@ -479,8 +468,8 @@ button:hover .button-text {
   padding: 25px 0;
   width: 100%;
 }
-.lavel > h2{
-  color:#FFFEFA;
+.lavel > h2 {
+  color: #fffefa;
 }
 /* End:Table of Expertise-Interests/Core skills */
 
@@ -511,7 +500,7 @@ button:hover .button-text {
 .input-form {
   border-color: transparent !important;
 }
-,
+
 .input-form:focus::-webkit-input-placeholder {
   color: transparent;
 }
@@ -566,7 +555,7 @@ button:hover .button-text {
 
 .container-contact100 {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -577,12 +566,24 @@ button:hover .button-text {
   align-items: center;
   padding: 15px;
 }
+@media(max-width:700px){
+  .container-contact100{
+    min-height: 100vh;
+  }
+}
 
 .wrap-contact100 {
   width: 50vw; /* */
-  background: transparent;
-  padding: 30px 0 80px 0;
+  background-color: transparent;
+  padding: 30px 0 0 0;
 }
+
+@media(max-width:700px){
+.wrap-contact100 {
+  padding: 30px 0 50px 0;
+}
+}
+
 /* For mobile  */
 @media (max-width: 992px) {
   .wrap-contact100 {
@@ -599,12 +600,12 @@ button:hover .button-text {
   display: block;
   font-family: Oswald-Medium;
   font-size: 30px;
-  font-size:2em;
+  font-size: 2em;
   color: #43383e;
   line-height: 1.2;
   text-align: left;
   padding-bottom: 35px;
-  padding-top:35px;
+  padding-top: 35px;
 }
 
 /*[ Input ]*/
@@ -712,7 +713,6 @@ textarea.input100 {
   padding: 0 20px;
   min-width: 160px;
   height: 62px;
-
   font-family: Oswald-Medium;
   font-size: 16px;
   font-size: 1em;
@@ -745,11 +745,10 @@ textarea.input100 {
   transform: translateY(-50%);
   right: 2px;
   pointer-events: none;
-
   font-family: Oswald-Regular;
   color: #c80000;
   font-size: 13px;
-  font-size:0.9em;
+  font-size: 0.9em;
   line-height: 1.4;
   text-align: left;
 
@@ -791,7 +790,17 @@ textarea.input100 {
 }
 /* End: Get in touch screen */
 
+
+
+
+
+
+
+
+
+
 /* Start:Footer -----------------------------------------------------------------------------------------------------------,-----*/
+
 @media (min-width: 768px) {
   .footer-social {
     padding-bottom: 170px;
@@ -968,7 +977,7 @@ textarea.input100 {
     text-transform: capitalize;
     font-family: "Georgia";
     font-size: 11px;
-    font-size:
+    font-size: 0.7em;
     letter-spacing: 1px;
     font-style: italic;
     color: #6488ba;
@@ -985,6 +994,60 @@ textarea.input100 {
 
   .footer-elemts:hover .footer-link .footer-logos:last-child {
     color: #857e74;
+  }
+
+}
+
+@media (max-width: 760px) {
+  #footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-align: center;
+    margin-bottom: 4em;
+  }
+  #footer a {
+    color: inherit;
+  }
+  #footer:before {
+    content: "";
+    display: inline-block;
+    width: 6em;
+    height: 2px;
+    background-color: #666666;
+    margin-bottom: 1em;
+  }
+  .icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+  }
+  .icons > li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+  }
+  .icons > li:last-child {
+    padding-right: 0;
+  }
+
+  .icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+  }
+  .icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+  }
+  .icon > .label {
+    display: none;
   }
 }
 

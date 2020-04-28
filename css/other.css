@@ -249,6 +249,9 @@ a {
 /*End:Pantalla inicio------------------------------------------------------------------------------------------------------ */
 
 /*Start:Main Secciones descritas por navbar principal */
+.about_pa{
+  text-align:justify;
+}
 
 /*Mobile first */
 .cd-section {
@@ -345,6 +348,8 @@ a {
     max-width: 550px;
   }
 }
+
+
 
 .cv-button {
   display: flex;

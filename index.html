@@ -100,7 +100,7 @@
 
         <section class="about-section">
           <img src="img/danao.jpeg" alt="Danea Mirel" class="about-photo" />
-          <p>
+          <p class="about_pa">
             <br />
             Danae Martinez is a data science professional.
             <br />
@@ -118,7 +118,6 @@
           </p>
         </section>
 
-        
         <section class="cv-button">
           <button
             class="learn-more"
@@ -183,7 +182,7 @@
                 <i class="fab fa-python"></i> Python programming
               </li>
               <li class="list-elements">
-                <i class="fab fa-r-project"> R programming</i>
+                <i class="fab fa-r-project"></i> R programming
               </li>
             </ol>
           </div>
@@ -212,13 +211,12 @@
               <br />
               At Université de Montréal
             </p>
-            <form>
-              <button class="btn-external"
-                formaction="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/22552"
-              >
-                <span>Read More</span>
-              </button>
-            </form>
+            <button
+              class="btn-external"
+              onclick="window.location.href = 'https://papyrus.bib.umontreal.ca/xmlui/handle/1866/22552';"
+            >
+              Read More
+            </button>
           </li>
           <li>
             <h2>2016</h2>
@@ -241,11 +239,7 @@
 
     <div class="container-contact100" id="cd-placholder-contact-me">
       <div class="wrap-contact100">
-        <form
-          class="contact100-form validate-form"
-          action="https://formspree.io/mgelqyle"
-          method="POST"
-        >
+        <form class="contact100-form validate-form" action="" method="POST">
           <span class="contact100-form-title">
             Get in Touch
           </span>

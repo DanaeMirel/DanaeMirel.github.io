@@ -72,6 +72,11 @@ jQuery(document).ready(function($){
 	$('.cd-primary-nav').on('click', function(event){
 		if($(event.target).is('.cd-primary-nav')) $(this).children('ul').toggleClass('is-visible');
 	});
+
+
+
+
+
 });
 
 
@@ -130,6 +135,10 @@ jQuery(document).ready(function($){
 		$(thisAlert).removeClass('alert-validate');
 	}
 
+	function openInNewTab(url) {
+  		var win = window.open(url, '_blank');
+ 	 	win.focus();
+	}
 
 
 })(jQuery);

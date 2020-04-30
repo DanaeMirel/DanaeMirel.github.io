@@ -1104,47 +1104,6 @@ textarea.input100 {
   margin-top: 5px;
 }
 
-.btn-external {
-  border: 1px solid #b7b7b7;
-  padding: 10px 20px;
-  /* color: #423c35;
-  border-radius: 3px;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-  transform: translateY(-40px);
-  opacity: 0;
-  cursor: pointer;
-  overflow: hidden; */
-}
-
-/* Fix button */
-.tilesWrap li:hover button {
-  transform: translateY(5px);
-  opacity: 1;
-}
-
-.tilesWrap li button:before {
-  content: "";
-  height: 100%;
-  width: 120%;
-  background: #b7b7b7;
-  top: 0;
-  opacity: 0;
-  left: -140px;
-  border-radius: 0 20px 20px 0;
-  z-index: -1;
-  transition: all 0.3s ease-in-out;
-}
-
-.tilesWrap li button:hover:before {
-  left: 0;
-  opacity: 1;
-}
-
-.tilesWrap li button:hover {
-  color: #262a2b;
-}
-
 .tilesWrap li:hover h2 {
   top: 0px;
   opacity: 0.6;
@@ -1160,15 +1119,41 @@ textarea.input100 {
   background: #fff;
   transform: skew(2deg, 2deg);
 }
-.tilesWrap li:after {
-  content: "";
-  position: absolute;
-  width: 40%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.02);
+
+/* El position absolute genera el conflicto con el boton */
+
+.btn-external {
+  border: 1px solid #b7b7b7;
+  padding: 10px 20px;
+  display: block;
+  color: #423c35;
+  border-radius: 3px;
+  position: relative;
+  z-index: 2;
+  /*transition: all 0.3s ease-in-out;
+  transform: translateY(-40px);
+  opacity: 0;
+  cursor: pointer;
+  overflow: hidden; */
 }
+.btn-external::before{
+  display: block;
+  content: "";
+  height: 100%;
+  width: 120%;
+  background: #b7b7b7;
+  top: 0;
+  opacity: 0;
+  left: -140px;
+  border-radius: 0 20px 20px 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out
+}
+
+
+
+/* Fix button */
+
 .tilesWrap li:nth-child(1):before {
   background: #c9ffbf;
   background: -webkit-linear-gradient(to right, #9aadbf, #6d98ba);

@@ -1199,7 +1199,7 @@ textarea.input100 {
     flex-direction: column;
   }
   .intro-photo {
-    margin-top: 20vw;
+    margin-top: 12vw;
     width: 100%;
     height: auto;
     max-width: 250px;
@@ -1208,9 +1208,11 @@ textarea.input100 {
     display:none;
   }
 
-
   .presentacion-text {
+  
   }
+
+
   .intro-text-name {
     position: relative;
     font: 300% Helvetica, Sans-Serif;
@@ -1231,6 +1233,31 @@ textarea.input100 {
     width: auto;
     max-height: 400px;
     border:none;
-
   }
+
+  .expertise{
+    flex-direction:column;
+    flex-wrap: wrap;
+    margin-top: 6vh;
+  }
+
+  .interets,
+  .skills {
+    width: 100%;
+    margin: none;
+    border-radius: none;
+    
+  }
+  .tilesWrap li {
+    min-width: 300px;
+    max-width: 350px;
+      
+  }
+  .tilesWrap li h2 {
+  font-size: 7em;
+  }
+  .fa{
+    font-size:1.4em;
+  }
+
 }

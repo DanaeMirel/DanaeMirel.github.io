@@ -13,20 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap"
       rel="stylesheet"
     />
-    <!--
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    -->
+
 
     <link rel="stylesheet" href="css/reset.css" />
     <!-- CSS reset -->
     <link rel="stylesheet" href="css/other.css" />
-
-    <!--
-    <link rel="stylesheet" href="css/style.css" />
-    -->
 
     <!-- Resource style -->
     <script src="js/modernizr.js"></script>
@@ -61,8 +52,9 @@
           </div>
         </div>
       </section>
-      <!-- #cd-intro -->
 
+
+      <!-- Nav bar de inicio -->
       <div class="cd-secondary-nav">
         <a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a>
         <!-- button visible on small devices -->
@@ -88,16 +80,23 @@
                 <b>Experience</b>
               </a>
             </li>
+            <li>
+              <a href="#cd-placeholder-4">
+                <b>Projects</b>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
     </div>
-    <!-- .cd-secondary-nav -->
 
+
+    <!-- Main-->
     <main class="cd-main-content">
+
+      <!--About section -->
       <section id="cd-placeholder-1" class="cd-section cd-container">
         <h2>About</h2>
-
         <section class="about-section">
           <img src="img/danao.jpeg" alt="Danea Mirel" class="about-photo" />
           <p class="about_pa">
@@ -132,8 +131,7 @@
         </section>
       </section>
 
-      <!-- #cd-placeholder-1 -->
-
+      <!--Lista de Expertise -->
       <section id="cd-placeholder-2" class="cd-section cd-container">
         <h2>Expertise</h2>
         <section class="expertise">
@@ -157,7 +155,8 @@
               <li class="list-elements">
                 <i class="far fa-eye"></i> Computer vision
               </li>
-              <li class="list-elements"><i class="fas fa-language"></i> NLP</li>
+              <li class="list-elements"><i class="fas fa-language"></i> NLP
+              </li>
             </ol>
           </div>
 
@@ -188,8 +187,8 @@
           </div>
         </section>
       </section>
-      <!-- #cd-placeholder-2 -->
 
+      <!--Tarjetas de experiencia -->
       <section id="cd-placeholder-3" class="cd-section cd-container">
         <h2>Experience</h2>
         <ul class="tilesWrap">
@@ -226,10 +225,67 @@
               At Citibank
             </p>
           </li>
+          <!-- Formato OJO! SOLO SE PUEDEN AGREGAR 2 MAS, DE OTRA FORMA SE NECESITA MODIFICAR CSS
+        
+            <li>
+              <h2></h2>     aqui va el year
+              <h3></h3>     aqui va el titulo, de que trabajaste
+              <p></p>       aqui va el lugar
+              <button       Si debes poner boton, si no , eliminar
+              class="btn-external"
+              onclick="window.open('
+                //Poner aqui el link extermp
+              ','_blank');"
+              >
+            </li>
+
+          -->
         </ul>
       </section>
-      <!-- #cd-placeholder-3 -->
-      <!-- #cd-placeholder-4 -->
+
+      <!--AGREGAR PORYECTOS AQUI -->
+      <section id="cd-placeholder-4" class="cd-section cd-container">
+        <h2>Personal Projects</h2>
+        <div class ="center">
+        <!--GUNS IN AMERICA-->
+        <figure class="snip1321">
+          <img src="img/proyectos/guns.jpg" alt="gunsUsa" />
+          <figcaption>
+            <i class="fas fa-map"></i>
+            <h4>USA Shootings</h4>
+            <h2>Data Analysis</h2>
+          </figcaption>
+          <a
+            href="https://danaemirelmartinez.shinyapps.io/usa_shootings_dashboard/"
+          ></a>
+        </figure>
+
+        <figure class="snip1321">
+          <img src="img/proyectos/bicis.jpg" alt="bikes" />
+          <figcaption>
+            <i class="fas fa-bicycle"></i>
+            <h4>Montreal Bikes Shares</h4>
+            <h2>Data Analysis</h2>
+          </figcaption>
+          <a
+            href="https://danaemirelmartinez.shinyapps.io/Bike_Shares_Mtl_Bixi/"
+          ></a>
+        </figure>
+        
+
+        <!-- Form -->
+        <!-- <figure class="snip1321">
+          <img src="" alt=""/>    agrega imagen aqui/ debe d estar en /img/proyectos
+          <figcaption>
+            <i class=""></i>    agrega icono , busca aqui https://fontawesome.com/icons?d=gallery&m=free
+            <h4></h4>           agrega titulo
+            <h2></h2>           agrega titulo
+          </figcaption>
+          <a href=""></a>       agrega link al proycto
+        </figure> -->
+      
+      </div>
+      </section>
     </main>
     <!-- .cd-main-content -->
 
@@ -237,7 +293,7 @@
   Danae:
   https://formspree.io/xyydvjrb
   -->
-
+  <!--Contact Me -->
     <div class="container-contact100" id="cd-placholder-contact-me">
       <div class="wrap-contact100">
         <form class="contact100-form validate-form" action="" method="POST">
@@ -298,6 +354,8 @@
       </div>
     </div>
 
+
+    <!--FOOTER-->
     <footer class="footer-social" id="footer">
       <nav class="footer-nav" id="cd-placeholder-footer">
         <menu class="footer-menu icons">

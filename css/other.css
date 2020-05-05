@@ -802,7 +802,6 @@ textarea.input100 {
 /* End: Get in touch screen */
 
 /* Start:Footer -----------------------------------------------------------------------------------------------------------,-----*/
-
 @media (min-width: 768px) {
   .footer-social {
     padding-bottom: 170px;
@@ -1136,21 +1135,6 @@ textarea.input100 {
   cursor: pointer;
   overflow: hidden; */
 }
-.btn-external::before{
-  display: block;
-  content: "";
-  height: 100%;
-  width: 120%;
-  background: #b7b7b7;
-  top: 0;
-  opacity: 0;
-  left: -140px;
-  border-radius: 0 20px 20px 0;
-  z-index: -1;
-  transition: all 0.3s ease-in-out
-}
-
-
 
 /* Fix button */
 
@@ -1174,54 +1158,162 @@ textarea.input100 {
   background: -webkit-linear-gradient(to right, #694d75, #331832);
   background: linear-gradient(to right, #694d75, #331832);
 }
+.tilesWrap li:nth-child(5):before {
+  background: #c9ffbf;
+  background: -webkit-linear-gradient(to right, #9aadbf, #6d98ba);
+  background: linear-gradient(to right, #9aadbf, #6d98ba);
+}
+.tilesWrap li:nth-child(6):before {
+  background: #f2709c;
+  background: -webkit-linear-gradient(to right, #182825, #016fb9);
+  background: linear-gradient(to right, #182825, #016fb9);
+}
+
 /* End:Experience Section */
 
+/*Start:Projects section*/
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400, 500, 800);
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+figure.snip1321 {
+  font-family: "Raleway", Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin-top: 5vh;
+  min-width: 530px;
+  max-width: 615px;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+}
+figure.snip1321 * {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+figure.snip1321 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+figure.snip1321 figcaption {
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+figure.snip1321 h2,
+figure.snip1321 h4 {
+  margin: 0;
+}
+figure.snip1321 h2 {
+  font-weight: 600;
+}
+figure.snip1321 h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+figure.snip1321 i {
+  font-size: 32px;
+}
+figure.snip1321:after {
+  background-color: #ffffff;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+figure.snip1321 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.snip1321:hover figcaption,
+figure.snip1321.hover figcaption {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.snip1321:hover:after,
+figure.snip1321.hover:after {
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0);
+  opacity: 0.9;
+}
+/*End: Projects section*/
+
 /* Phono version for everything else  */
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   #cd-intro {
     height: 100%;
     display: flex;
     flex-direction: column;
   }
   .intro-photo {
-    margin-top: 12vw;
+    margin-top: 8vw;
     width: 100%;
     height: auto;
     max-width: 250px;
   }
-  .cd-secondary-nav{
-    display:none;
+  .cd-secondary-nav {
+    display: none;
   }
 
   .presentacion-text {
-  
   }
-
 
   .intro-text-name {
     position: relative;
     font: 300% Helvetica, Sans-Serif;
     text-align: center;
   }
-  .intro-text-job{
-    font:300% Helvetica, Sans-Serif; 
+  .intro-text-job {
+    font: 300% Helvetica, Sans-Serif;
     text-align: center;
   }
-  .about-section{
+  .about-section {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 
-  .about-photo{
+  .about-photo {
     height: 100%;
     width: auto;
     max-height: 400px;
-    border:none;
+    border: none;
   }
 
-  .expertise{
-    flex-direction:column;
+  .expertise {
+    flex-direction: column;
     flex-wrap: wrap;
     margin-top: 6vh;
   }
@@ -1231,18 +1323,24 @@ textarea.input100 {
     width: 100%;
     margin: none;
     border-radius: none;
-    
   }
   .tilesWrap li {
     min-width: 300px;
     max-width: 350px;
-      
   }
   .tilesWrap li h2 {
-  font-size: 7em;
+    font-size: 7em;
   }
-  .fa{
-    font-size:1.4em;
+  .fa {
+    font-size: 1.4em;
   }
 
+  figure.snip1321 {
+    min-width: 230px;
+    max-width: 315px;
+  }
+
+  .center {
+    width: 100%;
+  }
 }

@@ -1139,7 +1139,9 @@ textarea.input100 {
 
 
 .experience {
-  background: #002440;
+  /*background: #002440;*/
+  background: url(../img/intro-background.jpg) no-repeat center center;
+  background-size: cover;
   padding: 50px 0;
   overflow-x: hidden;
 }
@@ -1194,17 +1196,23 @@ textarea.input100 {
 }
 .experience .content ul li .experience-content h2 {
   font-size: 1.5em;
+  font-weight: bold;
+  color: #3c3c3c;
+  padding-bottom: 10px;
+}
+.experience .content ul li .experience-content h3 {
+  font-size: 1.25em;
   color: #3c3c3c;
   padding-bottom: 10px;
 }
 .experience .content ul li .experience-content .experience-time {
   color: #777;
-  font-size: 1.1em;
+  font-size: 1.2em;
   padding-bottom: 10px;
 }
 .experience .content ul li .experience-content p {
   color: #1a1a1a;
-  font-size: 0.95em;
+  font-size: 1.15em;
 }
 .experience .content ul li .experience-content:before {
   content: "";

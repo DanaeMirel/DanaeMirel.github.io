@@ -1,5 +1,5 @@
 :root {
-  font-size: 16px;
+  font-size: 18px;
 }
 *,
 *:after,
@@ -11,13 +11,13 @@
 
 body {
   font-size: 100%;
-  font-family: Helvetica;
+  font-family: Arial, Helvetica,  sans-serif;
   color: #000000;
-  background-color: #f2f2f2;
+  background-color: #FFFAFA; /*##FFFFFF*/
 }
 
 a {
-  color: #bfbfbf;
+  color: #F8F8FF;
   text-decoration: none;
 }
 
@@ -31,18 +31,21 @@ a {
 #cd-intro {
   position: relative;
   height: 90%;
-  background: url(../img/intro-background.jpg) no-repeat center center;
+  background: url(../img/intro-background.jpeg) no-repeat center center;
   background-size: cover;
   z-index: 2;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+
+  
 }
 /*Container photo */
 .container-intro-1 {
   order: 1;
 }
+
 /*Container button and text*/
 .container-intro-2 {
   order: 2;
@@ -64,36 +67,38 @@ a {
   color: white;
 }
 
+
 .intro-text-job {
   display: block;
   position: relative;
   font: 600% Helvetica, Sans-Serif;
   letter-spacing: -5px;
   font-size: 5em;
-  color: white;
-  /*color: rgba(0,0,255,0.5);  */
+  color: white;  
 }
+
 
 #cd-intro-tagline {
   order: 2;
   text-align: center;
 }
+
 /* Contact Me Boton */
-.cd-btn {
+.cd-btn{
   display: inline-block;
   padding: 1em 1.8em;
-  background-color: #404040;
+  background-color: #000000
   margin-top: 1em;
   border-radius: 20em;
   color: white;
 
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-font-smoothing: antialiased;
+  -backface-visibility: hidden;
+  webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .no-touch .cd-btn:hover {
-  background-color: #f5484a;
+  background-color: #404040;
 }
 .cd-btn.is-hidden {
   /* assign a position fixed and move outside the viewport (on the right) */
@@ -140,7 +145,7 @@ a {
   /* mobile first - secondary navigation hidden by default, triggered by tap/click on .cd-secondary-nav-trigger*/
   z-index: 1;
   height: 10%;
-  background-color: rgba(3, 13, 24, 0.96);
+  background-color: #000000;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   transition: height 0.3s;
@@ -178,15 +183,15 @@ a {
 
 .cd-secondary-nav li a b {
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   font-size: 0.8125rem;
   font-weight: 700;
-  color: rgba(240, 238, 225, 0.3);
+  color: #808080;
 }
 
 .cd-secondary-nav li a:hover b,
 .cd-secondary-nav li a.active b {
-  color: #f0eee1;
+  color: #ffffff;
 }
 .cd-secondary-nav li:nth-child(1) a span {
   background-position: 0 0;
@@ -202,20 +207,25 @@ a {
     background-position: -30px 0;
   }
 }
+
 @media (max-width: 1080px) and (min-width: 800px) {
   .cd-secondary-nav li:nth-child(2) a span {
     background-position: -50px 0;
   }
 }
+
 .cd-secondary-nav li:nth-child(3) a span {
   background-position: -80px 0;
 }
+
 .cd-secondary-nav li:nth-child(4) a span {
   background-position: -120px 0;
 }
+
 .cd-secondary-nav li:nth-child(5) a span {
   background-position: -160px 0;
 }
+
 .cd-secondary-nav.is-fixed {
   /* on Firefox CSS transition/animation fails when parent element changes position attribute*/
   /* so we defined to diffent classes: .is-fixed to change the position value and .is-animated to change childrens' attributes (padding and opacity)*/
@@ -225,14 +235,17 @@ a {
   height: 70px;
   width: 100%;
 }
+
 .cd-secondary-nav.animate-children {
   /* on Firefox CSS transition/animation fails when parent element changes position attribute*/
   /* so we defined to diffent classes: .is-fixed to change the position value and .is-animated to change childrens' attributes (padding and opacity)*/
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
+
 .cd-secondary-nav.animate-children li a {
   padding: 26px 30px 0 30px;
 }
+
 .cd-secondary-nav.animate-children li a span {
   opacity: 0;
 }
@@ -247,10 +260,9 @@ a {
 }
 
 /*End,:Nav inicio------------------------------------------------------------------------------------------------------ */
-
-/*End:Pantalla inicio------------------------------------------------------------------------------------------------------ */
-
+/*End:Pantalla inicio-------------------------------------------------------------------------------------------------- */
 /*Start:Main Secciones descritas por navbar principal */
+
 .about_pa {
   text-align: justify;
 }
@@ -335,15 +347,15 @@ a {
   border: 15px solid transparent;
 }
 
-@media (min-height: 1024px) {
+@media (min-height: 1561px) {
   .about-photo {
     width: 100%;
     height: auto;
-    max-width: 400px;
+    max-width: 350px;
   }
 }
 
-@media (min-width: 1361px) {
+@media (min-width: 1561px) {
   .about-photo {
     width: 100%;
     height: auto;
@@ -359,7 +371,7 @@ a {
 }
 
 button {
-  font-family: "Mukta";
+  font-family: Arial, Helvetica,  sans-serif;
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -472,7 +484,7 @@ button:hover .button-text {
 }
 .lavel {
   background-color: #000000;
-  font-family: "Montserrat";
+  font-family:  Arial, Helvetica,  sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -609,7 +621,7 @@ button:hover .button-text {
 
 .contact100-form-title {
   display: block;
-  font-family: Oswald-Medium;
+  font-family:  Arial, Helvetica,  sans-serif;
   font-size: 30px;
   font-size: 2em;
   color: #43383e;
@@ -650,7 +662,7 @@ button:hover .button-text {
   display: block;
   width: 100%;
   background: transparent;
-  font-family: Oswald-Medium;
+  font-family: Arial, Helvetica,  sans-serif;
   font-size: 15px;
   font-size: 1em;
   color: #43383e;
@@ -724,7 +736,7 @@ textarea.input100 {
   padding: 0 20px;
   min-width: 160px;
   height: 62px;
-  font-family: Oswald-Medium;
+  font-family: Arial, Helvetica,  sans-serif;
   font-size: 16px;
   font-size: 1em;
   color: #fff;
@@ -756,7 +768,7 @@ textarea.input100 {
   transform: translateY(-50%);
   right: 2px;
   pointer-events: none;
-  font-family: Oswald-Regular;
+  font-family:  Arial, Helvetica,  sans-serif;
   color: #c80000;
   font-size: 13px;
   font-size: 0.9em;
@@ -774,7 +786,7 @@ textarea.input100 {
 
 .alert-validate::after {
   content: "\f06a";
-  font-family: FontAwesome;
+  font-family:  Arial, Helvetica,  sans-serif;
   display: block;
   position: absolute;
   color: #c80000;
@@ -896,7 +908,7 @@ textarea.input100 {
 
 .experience {
   /*background: #002440;*/
-  background: url(../img/intro-background.jpg) no-repeat center center;
+  background: url(../img/intro-background2.jpg) no-repeat center center;
   background-size: cover;
   padding: 50px 0;
   overflow-x: hidden;
@@ -975,7 +987,8 @@ textarea.input100 {
 .experience .content ul li .experience-content button {
   justify-content: center;
   align-items: center;
-  background: red;
+  background: #00008B;
+  color: #fff
 }
 
 .experience .content ul li .experience-content:before {
@@ -1068,7 +1081,7 @@ textarea.input100 {
 }
 
 figure.snip1321 {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family:  Arial, Helvetica,  sans-serif;
   position: relative;
   overflow: hidden;
   margin-top: 5vh;
@@ -1080,6 +1093,7 @@ figure.snip1321 {
   -webkit-perspective: 50em;
   perspective: 50em;
 }
+
 figure.snip1321 * {
   -webkit-box-sizing: padding-box;
   box-sizing: padding-box;
@@ -1193,7 +1207,7 @@ figure.snip1321.hover:after {
   .about-photo {
     height: 100%;
     width: auto;
-    max-height: 400px;
+    max-height: 300px;
     border: none;
   }
 

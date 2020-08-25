@@ -10,10 +10,11 @@ body {
 }
 
 a {
-  color: #F8F8FF;
+  color: #000000;
   text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
 }
-
 
 :root {
   font-size: 18px;

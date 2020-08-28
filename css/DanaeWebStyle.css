@@ -295,7 +295,7 @@ a {
 @media only screen and (min-width: 1170px) {
   .cd-section {
     margin: 0 auto;
-    padding: 4em 0;
+    padding: 6em 0 12em;
   }
   .cd-section h2 {
     font-size: 30px;

@@ -913,6 +913,7 @@ a {
 .read_more:hover,
 .read_more a:hover {
   color: #2b9eb3;
+<<<<<<< HEAD
 }
 
 
@@ -921,6 +922,16 @@ a {
 }
 
 
+=======
+}
+
+
+.author {
+  z-index: 1;
+}
+
+
+>>>>>>> 09594d07743e4a54f3d9a11d3061ea773e8d9297
 /* ******************** */
 /* get in touch section */
 /* ******************** */
@@ -1336,11 +1347,28 @@ textarea.input100 {
 }
 
 /* El position absolute genera el conflicto con el boton */
+<<<<<<< HEAD
 /* .experience-time p{
   display: flex;
 } */
 
 
+=======
+.btn-external {
+  border: 1px solid #b7b7b7;
+  padding: 10px 20px;
+  color: #423c35;
+  border-radius: 3px;
+  position: relative;
+  z-index: 2;
+  margin-top: 5px;
+  /* transition: all 0.3s ease-in-out; */
+  /* transform: translateY(-40px); */
+  /* opacity: 0; */
+  cursor: pointer;
+  /* overflow: hidden; */
+}
+>>>>>>> 09594d07743e4a54f3d9a11d3061ea773e8d9297
 
 
 /* Phone version for everything else  */
